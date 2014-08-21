@@ -184,3 +184,13 @@ body {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+.forgot-password {
+  font-size: 13px;
+  color: #fff;
+  margin-top: 15px;
+  display: block;
+  font-weight: 400;
+}
+.forgot-password:hover {
+  color: #fff;
+}

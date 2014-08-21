@@ -4,23 +4,54 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Custom login/register lock page freebie by @remtsoy</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/lineicons.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div class="main-wrapper" style="background-image:url(img/bg-cosmos.jpg)">
+	<div class="main-wrapper">
+		<div class="main-wrapper-bg" id="main-wrapper-bg"></div>
+		<canvas id="my-canvas" class="my-canvas"></canvas>
 		<div class="main-wrapper-mask"></div>
 		<div class="main-container">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<h1>Welcome text here</h1>
+				<div class="row row-main">
+					<div class="col-md-4 col">
+						<h1 class="main-title">Welcome, my friend</h1>
+						<p>A hundred thousand welcomes: I could weep, And I could laugh; I am light and heavy: Welcome.</p>
 					</div>
-					<div class="col-md-3">
-						<h1>Login here</h1>
+					<div class="col-md-4 col">
+						<h1 class="main-title">Login</h1>
+						<form class="main-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username or e-mail">
+								<div class="form-icon lin lin-user"></div>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password">
+								<div class="form-icon lin lin-key"></div>
+							</div>
+							<input type="submit" value="Log in" class="btn btn-default btn-ghost">
+						</form>
 					</div>
-					<div class="col-md-3">
-						<h1>Register Here</h1>
+					<div class="col-md-4 col">
+						<h1 class="main-title">First Time Here?</h1>
+						<form class="main-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="First and last name">
+								<div class="form-icon lin lin-user"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="E-mail">
+								<div class="form-icon lin lin-envelope-open"></div>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password">
+								<div class="form-icon lin lin-lock"></div>
+							</div>
+							<input type="submit" value="Register" class="btn btn-default btn-ghost">
+						</form>
 					</div>
 				</div>
 			</div>
@@ -28,6 +59,7 @@
 	</div>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/canvas.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
